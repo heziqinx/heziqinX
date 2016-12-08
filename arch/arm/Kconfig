@@ -888,6 +888,14 @@ config TARGET_THUNDERX_88XX
 	select OF_CONTROL
 	select SYS_CACHE_SHIFT_7
 
+config TARGET_QT2440
+        bool "Support samsung QT2440"
+        select CPU_ARM920T
+        select SUPPORT_SPL
+        select SPL
+        help
+          Support for SamSung platform based arm920t
+
 endchoice
 
 source "arch/arm/mach-at91/Kconfig"
