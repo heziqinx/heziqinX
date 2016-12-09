@@ -15,4 +15,4 @@ config SYS_SOC
 
 config SYS_CONFIG_NAME
 	default "qt2440"
-#endif
+endif

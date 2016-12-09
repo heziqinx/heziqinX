@@ -21,6 +21,10 @@ CONFIG_ARM=y
 # CONFIG_XTENSA is not set
 CONFIG_SYS_ARCH="arm"
 CONFIG_SYS_CPU="arm920t"
+CONFIG_SYS_SOC="s3c24x0"
+CONFIG_SYS_VENDOR="samsung"
+CONFIG_SYS_BOARD="qt2440"
+CONFIG_SYS_CONFIG_NAME="qt2440"
 
 #
 # ARM architecture
@@ -214,7 +218,6 @@ CONFIG_BOOTSTAGE_STASH_SIZE=4096
 # CONFIG_SATA_BOOT is not set
 # CONFIG_SD_BOOT is not set
 # CONFIG_SPI_BOOT is not set
-CONFIG_BOOTDELAY=2
 
 #
 # Console
@@ -268,7 +271,7 @@ CONFIG_SYS_PROMPT="=> "
 #
 # Autoboot options
 #
-CONFIG_AUTOBOOT=y
+# CONFIG_AUTOBOOT is not set
 # CONFIG_AUTOBOOT_KEYED is not set
 
 #
@@ -283,41 +286,41 @@ CONFIG_AUTOBOOT=y
 #
 # Info commands
 #
-CONFIG_CMD_BDI=y
-CONFIG_CMD_CONSOLE=y
+# CONFIG_CMD_BDI is not set
+# CONFIG_CMD_CONSOLE is not set
 # CONFIG_CMD_CPU is not set
 # CONFIG_CMD_LICENSE is not set
 
 #
 # Boot commands
 #
-CONFIG_CMD_BOOTD=y
-CONFIG_CMD_BOOTM=y
+# CONFIG_CMD_BOOTD is not set
+# CONFIG_CMD_BOOTM is not set
 # CONFIG_CMD_BOOTZ is not set
 # CONFIG_CMD_BOOTMENU is not set
-CONFIG_CMD_ELF=y
-CONFIG_CMD_GO=y
-CONFIG_CMD_RUN=y
-CONFIG_CMD_IMI=y
-CONFIG_CMD_IMLS=y
-CONFIG_CMD_XIMG=y
+# CONFIG_CMD_ELF is not set
+# CONFIG_CMD_GO is not set
+# CONFIG_CMD_RUN is not set
+# CONFIG_CMD_IMI is not set
+# CONFIG_CMD_IMLS is not set
+# CONFIG_CMD_XIMG is not set
 
 #
 # Environment commands
 #
 # CONFIG_CMD_ASKENV is not set
-CONFIG_CMD_EXPORTENV=y
-CONFIG_CMD_IMPORTENV=y
-CONFIG_CMD_EDITENV=y
+# CONFIG_CMD_EXPORTENV is not set
+# CONFIG_CMD_IMPORTENV is not set
+# CONFIG_CMD_EDITENV is not set
 # CONFIG_CMD_GREPENV is not set
-CONFIG_CMD_SAVEENV=y
-CONFIG_CMD_ENV_EXISTS=y
+# CONFIG_CMD_SAVEENV is not set
+# CONFIG_CMD_ENV_EXISTS is not set
 
 #
 # Memory commands
 #
-CONFIG_CMD_MEMORY=y
-CONFIG_CMD_CRC32=y
+# CONFIG_CMD_MEMORY is not set
+# CONFIG_CMD_CRC32 is not set
 # CONFIG_LOOPW is not set
 # CONFIG_CMD_MEMTEST is not set
 # CONFIG_CMD_MX_CYCLIC is not set
@@ -326,9 +329,9 @@ CONFIG_CMD_CRC32=y
 #
 # Device access commands
 #
-CONFIG_CMD_LOADB=y
-CONFIG_CMD_LOADS=y
-CONFIG_CMD_FLASH=y
+# CONFIG_CMD_LOADB is not set
+# CONFIG_CMD_LOADS is not set
+# CONFIG_CMD_FLASH is not set
 # CONFIG_CMD_ARMFLASH is not set
 # CONFIG_CMD_MMC is not set
 # CONFIG_CMD_NAND is not set
@@ -338,27 +341,27 @@ CONFIG_CMD_FLASH=y
 # CONFIG_CMD_USB is not set
 # CONFIG_CMD_DFU is not set
 # CONFIG_CMD_USB_MASS_STORAGE is not set
-CONFIG_CMD_FPGA=y
+# CONFIG_CMD_FPGA is not set
 # CONFIG_CMD_GPIO is not set
 
 #
 # Shell scripting commands
 #
-CONFIG_CMD_ECHO=y
-CONFIG_CMD_ITEST=y
-CONFIG_CMD_SOURCE=y
-CONFIG_CMD_SETEXPR=y
+# CONFIG_CMD_ECHO is not set
+# CONFIG_CMD_ITEST is not set
+# CONFIG_CMD_SOURCE is not set
+# CONFIG_CMD_SETEXPR is not set
 
 #
 # Network commands
 #
-CONFIG_CMD_NET=y
+# CONFIG_CMD_NET is not set
 # CONFIG_CMD_TFTPPUT is not set
 # CONFIG_CMD_TFTPSRV is not set
 # CONFIG_CMD_RARP is not set
 # CONFIG_CMD_DHCP is not set
 # CONFIG_CMD_PXE is not set
-CONFIG_CMD_NFS=y
+# CONFIG_CMD_NFS is not set
 # CONFIG_CMD_MII is not set
 # CONFIG_CMD_PING is not set
 # CONFIG_CMD_CDP is not set
@@ -371,7 +374,7 @@ CONFIG_CMD_NFS=y
 #
 # CONFIG_CMD_CACHE is not set
 # CONFIG_CMD_TIME is not set
-CONFIG_CMD_MISC=y
+# CONFIG_CMD_MISC is not set
 # CONFIG_CMD_TIMER is not set
 # CONFIG_CMD_QFW is not set
 
@@ -401,12 +404,7 @@ CONFIG_SUPPORT_OF_CONTROL=y
 # Device Tree Control
 #
 # CONFIG_OF_CONTROL is not set
-CONFIG_NET=y
-# CONFIG_NET_RANDOM_ETHADDR is not set
-# CONFIG_NETCONSOLE is not set
-CONFIG_NET_TFTP_VARS=y
-CONFIG_BOOTP_PXE_CLIENTARCH=0x15
-CONFIG_BOOTP_VCI_STRING="U-Boot.arm"
+# CONFIG_NET is not set
 
 #
 # Device Drivers
@@ -515,7 +513,6 @@ CONFIG_BOOTP_VCI_STRING="U-Boot.arm"
 #
 # CONFIG_MTD_UBI is not set
 # CONFIG_PHYLIB is not set
-# CONFIG_NETDEVICES is not set
 # CONFIG_PCI is not set
 # CONFIG_MVEBU_COMPHY_SUPPORT is not set
 
@@ -610,7 +607,7 @@ CONFIG_HAVE_PRIVATE_LIBGCC=y
 CONFIG_USE_PRIVATE_LIBGCC=y
 CONFIG_SYS_HZ=1000
 # CONFIG_USE_TINY_PRINTF is not set
-CONFIG_REGEX=y
+# CONFIG_REGEX is not set
 # CONFIG_LIB_RAND is not set
 # CONFIG_CMD_DHRYSTONE is not set
 # CONFIG_RSA is not set
